@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/personal_botton"
+    tools:context=".personal.SettingsFragment">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="個人設定"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="10dp"/>
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/personal_function_btn" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/account_settings"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/personal_function_btn"
+                android:drawableLeft="@drawable/personal"
+                android:drawableRight="@drawable/chevron_right"
+                android:gravity="left|center"
+                android:text="   帳號設定"
+                android:textSize="15sp" />
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="分享&amp;粉絲團"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="10dp"/>
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:background="@drawable/personal_function_btn" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/shareBtn"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/personal_function_btn"
+                android:drawableLeft="@drawable/share"
+                android:drawableRight="@drawable/chevron_right"
+                android:gravity="left|center"
+                android:text="   分享App"
+                android:textSize="15sp" />
+
+            <Button
+                android:id="@+id/fb_fans_btn"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/personal_function_btn"
+                android:drawableLeft="@drawable/facebook"
+                android:drawableRight="@drawable/chevron_right"
+                android:gravity="left|center"
+                android:text="   Facebook"
+                android:textSize="15sp" />
+
+            <Button
+                android:id="@+id/ig_fans_btn"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:background="@drawable/personal_function_btn"
+                android:drawableLeft="@drawable/instagram"
+                android:drawableRight="@drawable/chevron_right"
+                android:gravity="left|center"
+                android:text="   Instagram"
+                android:textSize="15sp" />
+
+        </LinearLayout>
+
+    </FrameLayout>
+
+</LinearLayout>

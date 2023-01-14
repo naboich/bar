@@ -1,0 +1,43 @@
+<resources>
+    <string name="app_name">飲酒吧 Enjoy吧</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="searchview" />
+
+
+    <string name="facebook_app_id">623129376122216</string>
+    <string name="fb_login_protocol_scheme">fb623129376122216</string>
+    <string name="facebook_client_token">fbfecb3d50dc536b57fbd39f720528d1</string>
+
+    <string-array name="peoples">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>10人以上</item>
+    </string-array>
+
+    <string-array name="gender">
+        <item>  </item>
+        <item>男</item>
+        <item>女</item>
+    </string-array>
+
+    <!--    <string-array name="booking_hour">-->
+    <!--        <item>17</item>-->
+    <!--        <item>18</item>-->
+    <!--        <item>19</item>-->
+    <!--        <item>20</item>-->
+    <!--        <item>21</item>-->
+    <!--        <item>22</item>-->
+    <!--        <item>23</item>-->
+    <!--        <item>24</item>-->
+    <!--    </string-array>-->
+
+</resources>

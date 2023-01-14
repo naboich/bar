@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E6E1D8"
+    tools:context=".diy.DIYdescfragment">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/diy_imagegholder"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                app:srcCompat="@color/common_google_signin_btn_text_dark_disabled" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/personal_top" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/diy_nameholder"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="8dp"
+                    android:text="瑪格麗特  Margarita"
+                    android:textColor="#83301A"
+                    android:layout_weight="1"
+                    android:textSize="23sp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/fav_border"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="8dp"
+                    android:layout_weight="5"
+                    android:src="@drawable/favorite_border" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/personal_top" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="  ◆   材料比例   ◆"
+                android:background="#838041"
+                android:textStyle="normal"
+                android:textColor="@color/white"
+                android:layout_marginLeft="0dp"
+                style="@style/TITLE"/>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#FAF1EA">
+
+                <TextView
+                    android:id="@+id/materialholder"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="龍舌蘭 60 ml\n君度橙酒 20 ml\n現榨檸檬汁 20 ml\n純糖漿 2 tsp\n瑪格麗特苦精 1 dash"
+                    android:textSize="15dp"
+                    style="@style/content"/>
+
+            </FrameLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/personal_top" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="  ◆   製作方法   ◆"
+                android:background="#838041"
+                android:textStyle="normal"
+                android:textColor="@color/white"
+                android:layout_marginLeft="0dp"
+                style="@style/TITLE"/>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#FAF1EA">
+
+                <TextView
+                    android:id="@+id/practiceholder"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="１．以馬丁尼杯製作鹽口杯，並冰鎮。\n２．雪克杯加入所有材料及冰塊，搖盪均勻。\n３．濾掉冰塊，將酒液倒入冰鎮過的鹽口馬丁尼杯。"
+                    android:textSize="15dp"
+                    style="@style/content" />
+
+            </FrameLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/personal_top" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="  ◆   建議裝飾物   ◆"
+                android:background="#838041"
+                android:textStyle="normal"
+                android:textColor="@color/white"
+                android:layout_marginLeft="0dp"
+                style="@style/TITLE"/>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#FAF1EA">
+
+                <TextView
+                    android:id="@+id/suggestlholder"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="15dp"
+                    android:text="檸檬片"
+                    style="@style/content" />
+
+            </FrameLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/personal_top" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:text="  資料來源:  "
+                android:background="#838041"
+                android:textStyle="normal"
+                android:textColor="@color/white"
+                android:layout_marginLeft="0dp"
+                style="@style/TITLE" />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#FAF1EA">
+
+                <TextView
+                    android:id="@+id/fromholder"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="https://mixology.com.tw/RecipeContent.aspx?rid=T001"
+                    android:textSize="15dp"
+                    style="@style/content"
+                    android:layout_marginBottom="85dp"/>
+
+            </FrameLayout>
+
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</FrameLayout>

@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center"
+            android:text="篩選"
+            android:textColor="@color/black"
+            android:textSize="25dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="5"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:text="距離"
+            android:textColor="@color/black"
+            android:textSize="20sp" />
+
+        <RadioGroup
+            android:id="@+id/distance_dialog"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp">
+
+            <RadioButton
+                android:id="@+id/km_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1公里以內"
+                android:textSize="15sp"/>
+
+            <RadioButton
+                android:id="@+id/km_1_5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1公里-1.5公里"
+                android:textSize="15sp"/>
+
+            <RadioButton
+                android:id="@+id/km_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="1.5公里-2公里"
+                android:textSize="15sp"/>
+
+
+        </RadioGroup>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="10dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:layout_marginTop="10dp"
+                android:text="設施"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+            <CheckBox
+                android:id="@+id/dart_filter"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="飛鏢機"
+                android:textSize="15sp"/>
+
+            <CheckBox
+                android:id="@+id/board_game_filter"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="桌遊"
+                android:textSize="15sp"/>
+
+            <CheckBox
+                android:id="@+id/singing_machine_filter"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="唱歌機"
+                android:textSize="15sp"/>
+
+            <CheckBox
+                android:id="@+id/pool_filter"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="撞球"
+                android:textSize="15sp"/>
+
+            <CheckBox
+                android:id="@+id/hand_football_filter"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="手足球"
+                android:textSize="15sp"/>
+
+            <CheckBox
+                android:id="@+id/musical_instrument_filter"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="樂器"
+                android:textSize="15sp"/>
+
+            <CheckBox
+                android:id="@+id/performance_filter"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="表演"
+                android:textSize="15sp"/>
+
+            <CheckBox
+                android:id="@+id/game_console_filter"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="遊戲機"
+                android:textSize="15sp"/>
+
+            <CheckBox
+                android:id="@+id/box_filter"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="包廂"
+                android:textSize="15sp"/>
+
+            <CheckBox
+                android:id="@+id/projection_Screen_filter"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="投影幕"
+                android:textSize="15sp"/>
+
+            <CheckBox
+                android:id="@+id/aquarium_filter"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="水族箱"
+                android:textSize="15sp"/>
+
+            <CheckBox
+                android:id="@+id/television_filter"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="電視機"
+                android:textSize="15sp"/>
+
+            <CheckBox
+                android:id="@+id/private_room_filter"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="可包場"
+                android:textSize="15sp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="10dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="5"
+                android:layout_marginTop="10dp"
+                android:text="風格"
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+
+            <CheckBox
+                android:id="@+id/American_style"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="美式"
+                android:textSize="15sp"/>
+
+            <CheckBox
+                android:id="@+id/Japanese_style"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="日式"
+                android:textSize="15sp"/>
+
+            <CheckBox
+                android:id="@+id/Chinese_style"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="中式"
+                android:textSize="15sp"/>
+
+            <CheckBox
+                android:id="@+id/European_style"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="歐式"
+                android:textSize="15sp"/>
+
+            <CheckBox
+                android:id="@+id/generally_style"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="一般"
+                android:textSize="15sp"/>
+
+            <CheckBox
+                android:id="@+id/music_style"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="音樂"
+                android:textSize="15sp"/>
+
+            <CheckBox
+                android:id="@+id/party_style"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="派對"
+                android:textSize="15sp"/>
+
+            <CheckBox
+                android:id="@+id/restaurant_style"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="餐酒館"
+                android:textSize="15sp"/>
+
+            <CheckBox
+                android:id="@+id/industrial_style"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="工業風"
+                android:textSize="15sp"/>
+
+            <CheckBox
+                android:id="@+id/classical_style"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="復古風"
+                android:textSize="15sp"/>
+
+            <CheckBox
+                android:id="@+id/urban_style"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="都市風"
+                android:textSize="15sp"/>
+
+            <CheckBox
+                android:id="@+id/modern_style"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="現代風"
+                android:textSize="15sp"/>
+
+            <CheckBox
+                android:id="@+id/gay_bar_style"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="GAY吧"
+                android:textSize="15sp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

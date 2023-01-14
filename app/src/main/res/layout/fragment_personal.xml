@@ -1,0 +1,381 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/personal_botton"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:background="@color/personal_top" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end"
+                    android:orientation="horizontal">
+
+                    <ImageButton
+                        android:id="@+id/barcode_btn"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:backgroundTint="@color/personal_top"
+                        android:src="@drawable/barcode" />
+
+                    <!--                <ImageButton-->
+                    <!--                    android:id="@+id/settings_btn"-->
+                    <!--                    android:layout_width="match_parent"-->
+                    <!--                    android:layout_height="wrap_content"-->
+                    <!--                    android:backgroundTint="#7c7575"-->
+                    <!--                    android:src="@drawable/settings" />-->
+
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/circleImageView"
+                        android:layout_width="150dp"
+                        android:layout_height="150dp"
+                        android:layout_centerHorizontal="true"
+                        android:layout_marginTop="45dp"
+                        android:elevation="1dp"
+                        android:src="@drawable/default_icon" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="155dp"
+                            android:background="@color/ewhite"
+                            android:paddingRight="15dp"
+                            android:paddingBottom="15dp"
+                            app:cardCornerRadius="10dp">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/personal_2_btn"
+                                android:orientation="vertical">
+
+                                <TextView
+                                    android:id="@+id/fullnameholder"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center_horizontal"
+                                    android:layout_marginTop="50dp"
+                                    android:text="訪客"
+                                    android:textColor="@color/black"
+                                    android:textSize="25sp"
+                                    android:textStyle="bold" />
+
+                                <LinearLayout
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:orientation="horizontal">
+
+                                    <Button
+                                        android:id="@+id/personal_coupon"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:background="@drawable/personal_2_btn"
+                                        android:text="優惠券"
+                                        android:textColor="@color/black"
+                                        android:textSize="18sp"
+                                        android:textStyle="bold" />
+
+                                    <TextView
+                                        android:layout_width="wrap_content"
+                                        android:layout_height="wrap_content"
+                                        android:text="|"
+                                        android:textColor="@color/black"
+                                        android:textSize="30sp"
+                                        android:textStyle="bold" />
+
+                                    <Button
+                                        android:id="@+id/personal_point"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="wrap_content"
+                                        android:layout_weight="1"
+                                        android:background="@drawable/personal_2_btn"
+                                        android:text="累計點數"
+                                        android:textColor="@color/black"
+                                        android:textSize="18sp"
+                                        android:textStyle="bold" />
+
+                                </LinearLayout>
+                            </LinearLayout>
+                        </androidx.cardview.widget.CardView>
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp">
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="120dp"
+                        android:background="@drawable/personal_function_btn" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:orientation="vertical">
+
+                        <Button
+                            android:id="@+id/add_coupon_code"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:background="@drawable/personal_function_btn"
+                            android:drawableLeft="@drawable/add"
+                            android:drawableRight="@drawable/chevron_right"
+                            android:gravity="left|center"
+                            android:text="   輸入優惠碼"
+                            android:textSize="15sp" />
+
+                        <Button
+                            android:id="@+id/common_problem_btn"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:background="@drawable/personal_function_btn"
+                            android:drawableLeft="@drawable/question_answer"
+                            android:drawableRight="@drawable/chevron_right"
+                            android:gravity="left|center"
+                            android:text="   常見問題"
+                            android:textSize="15sp" />
+
+                        <Button
+                            android:id="@+id/satisfaction_btn"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:background="@drawable/personal_function_btn"
+                            android:drawableLeft="@drawable/sentiment_satisfied"
+                            android:drawableRight="@drawable/chevron_right"
+                            android:gravity="left|center"
+                            android:text="   滿意度調查"
+                            android:textSize="15sp" />
+
+
+                    </LinearLayout>
+
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp">
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="160dp"
+                        android:background="@drawable/personal_function_btn" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:orientation="vertical">
+
+                        <Button
+                            android:id="@+id/about_us_btn"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:background="@drawable/personal_function_btn"
+                            android:drawableLeft="@drawable/about_us"
+                            android:drawableRight="@drawable/chevron_right"
+                            android:gravity="left|center"
+                            android:text="   關於 飲酒吧 Enjoy bar"
+                            android:textSize="15sp" />
+
+                        <Button
+                            android:id="@+id/settings_btn"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:background="@drawable/personal_function_btn"
+                            android:drawableLeft="@drawable/settings"
+                            android:drawableRight="@drawable/chevron_right"
+                            android:gravity="left|center"
+                            android:text="   設定"
+                            android:textSize="15sp" />
+
+                        <Button
+                            android:id="@+id/problem_report_btn"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:background="@drawable/personal_function_btn"
+                            android:drawableLeft="@drawable/report_problem"
+                            android:drawableRight="@drawable/chevron_right"
+                            android:gravity="left|center"
+                            android:text="   問題回報"
+                            android:textSize="15sp" />
+
+                        <Button
+                            android:id="@+id/app_teaching_btn"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:background="@drawable/personal_function_btn"
+                            android:drawableLeft="@drawable/teach"
+                            android:drawableRight="@drawable/chevron_right"
+                            android:gravity="left|center"
+                            android:text="   app教學"
+                            android:textSize="15sp" />
+
+                    </LinearLayout>
+
+                </FrameLayout>
+
+                <FrameLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp">
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:background="#dfd3d3" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <Button
+                            android:id="@+id/logoutBtn"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:background="@drawable/personal_function_btn"
+                            android:text="登出"
+                            android:textSize="15sp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                </FrameLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="80dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        style="@style/company_file"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="飲酒吧 Enjoy bar" />
+
+                    <TextView
+                        style="@style/company_file"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="你專屬的品酒資訊整合系統" />
+
+                    <TextView
+                        style="@style/company_file"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:text="休閒娛樂產品" />
+
+                    <TextView
+                        style="@style/company_file"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="V 1.0.0" />
+
+                    <TextView
+                        style="@style/company_file"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="80dp"
+                        android:text="指棒拇指股份有限公司" />
+
+                </LinearLayout>
+
+                <!--            <LinearLayout-->
+                <!--                android:layout_width="match_parent"-->
+                <!--                android:layout_height="match_parent"-->
+                <!--                android:layout_marginTop="20dp"-->
+                <!--                android:orientation="horizontal">-->
+
+                <!--                <ImageButton-->
+                <!--                    android:id="@+id/shareBtn"-->
+                <!--                    android:layout_width="wrap_content"-->
+                <!--                    android:layout_height="wrap_content"-->
+                <!--                    android:layout_weight="1"-->
+                <!--                    android:backgroundTint="@color/pblue"-->
+                <!--                    android:src="@drawable/share_w" />-->
+
+                <!--                <ImageButton-->
+                <!--                    android:id="@+id/logoutBtn"-->
+                <!--                    android:layout_width="wrap_content"-->
+                <!--                    android:layout_height="wrap_content"-->
+                <!--                    android:layout_weight="1"-->
+                <!--                    android:backgroundTint="@color/pblue"-->
+                <!--                    android:src="@drawable/logout_w" />-->
+                <!--            </LinearLayout>-->
+
+                <!--            <LinearLayout-->
+                <!--                android:layout_width="match_parent"-->
+                <!--                android:layout_height="match_parent"-->
+                <!--                android:orientation="horizontal">-->
+
+                <!--                <TextView-->
+                <!--                    android:layout_width="wrap_content"-->
+                <!--                    android:layout_height="wrap_content"-->
+                <!--                    android:layout_weight="1"-->
+                <!--                    android:gravity="center"-->
+                <!--                    android:text="分享"-->
+                <!--                    android:textColor="@color/white"-->
+                <!--                    android:textStyle="bold" />-->
+
+                <!--                <TextView-->
+                <!--                    android:layout_width="wrap_content"-->
+                <!--                    android:layout_height="wrap_content"-->
+                <!--                    android:layout_weight="1"-->
+                <!--                    android:gravity="center"-->
+                <!--                    android:text="登出"-->
+                <!--                    android:textColor="@color/white"-->
+                <!--                    android:textStyle="bold" />-->
+                <!--            </LinearLayout>-->
+
+                <!--            <TextView-->
+                <!--                android:layout_width="wrap_content"-->
+                <!--                android:layout_height="wrap_content"-->
+                <!--                android:layout_marginTop="90dp"-->
+                <!--                android:text=" " />-->
+            </LinearLayout>
+        </FrameLayout>
+    </ScrollView>
+
+</RelativeLayout>

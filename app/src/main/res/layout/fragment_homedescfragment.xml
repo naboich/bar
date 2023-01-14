@@ -1,0 +1,354 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E6E1D8"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#FAF1EA"
+            android:orientation="vertical">
+
+            <ImageView
+                android:id="@+id/imagegholder"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:background="@color/personal_top" />
+
+            <!--                <com.denzcoskun.imageslider.ImageSlider-->
+            <!--                    android:id="@+id/image_slider"-->
+            <!--                    android:layout_width="wrap_content"-->
+            <!--                    android:layout_height="270dp"-->
+            <!--                    app:iss_auto_cycle="true"-->
+            <!--                    app:iss_period="3000"/>-->
+
+            <TextView
+                android:id="@+id/nameholder"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="8dp"
+                android:text="Green Door 綠門餐酒館"
+                android:textColor="#83301A"
+                android:textSize="23sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/kmholder"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="4"
+                    android:text="1公里內" />
+
+                <ImageView
+                    android:id="@+id/fav_border"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:src="@drawable/favorite_border" />
+
+                <ImageView
+                    android:id="@+id/booking_border"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_weight="0.5"
+                    android:src="@drawable/booking" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/personal_top" />
+
+            <TextView
+                style="@style/TITLE"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="店家資訊" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/personal_top" />
+
+            <TextView
+                style="@style/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="營業時間:" />
+
+            <TextView
+                android:id="@+id/businessholder"
+                style="@style/content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="PM 7:00" />
+
+            <TextView
+                style="@style/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="電話:" />
+
+            <TextView
+                android:id="@+id/phoneholder"
+                style="@style/content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:autoLink="phone"
+                android:text="02 2591 1818" />
+
+            <TextView
+                style="@style/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="風格:" />
+
+            <TextView
+                android:id="@+id/styleholder"
+                style="@style/content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="美式復古風" />
+
+            <TextView
+                style="@style/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="設施:" />
+
+            <TextView
+                android:id="@+id/facilityholder"
+                style="@style/content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="飛鏢機" />
+
+            <TextView
+                style="@style/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="食物:" />
+
+            <TextView
+                android:id="@+id/foodholder"
+                style="@style/content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="有/美式餐點" />
+
+            <TextView
+                style="@style/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="招牌:" />
+
+            <TextView
+                android:id="@+id/signholder"
+                style="@style/content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="竹籃炸雞、海鮮披薩" />
+
+            <TextView
+                style="@style/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="活動:" />
+
+            <TextView
+                android:id="@+id/activityholder"
+                style="@style/content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="無" />
+
+            <TextView
+                style="@style/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="低消:" />
+
+            <TextView
+                android:id="@+id/consumptionholder"
+                style="@style/content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="不知道" />
+
+            <TextView
+                style="@style/title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="菜單:" />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    style="@style/content"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="無" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="3dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/menu1holder"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/logo" />
+
+                    <ImageView
+                        android:id="@+id/menu2holder"
+                        android:layout_width="100dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:src="@drawable/logo" />
+
+                </LinearLayout>
+
+
+            </FrameLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/personal_top" />
+
+            <TextView
+                style="@style/TITLE"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="地址" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/personal_top" />
+
+            <LinearLayout
+                android:id="@+id/layout_place"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/placeholder"
+                    style="@style/title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="10"
+                    android:autoLink="phone|web"
+                    android:clickable="true"
+                    android:drawableLeft="@drawable/place"
+                    android:text="台北市中山區德惠街6-1號號1樓" />
+
+                <ImageView
+                    style="@style/title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:src="@drawable/chevron_right" />
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/personal_top" />
+
+            <TextView
+                style="@style/TITLE"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="評論" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/personal_top" />
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="5dp"
+                    android:text="無評論..."
+                    android:textColor="@color/black" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/review_rv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" />
+
+            </FrameLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="5dp"
+                android:layout_marginTop="5dp"
+                android:background="@color/personal_top" />
+
+            <TextView
+                style="@style/TITLE"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="其他推薦" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/personal_top" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="1dp"
+                android:orientation="horizontal">
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recommend_rv"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="85dp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</FrameLayout>
